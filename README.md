@@ -1,6 +1,7 @@
 # Scanner_APP
 Simple React Scanner Ap
-    1) Create a react-native client application. 
+          
+	  1) Create a react-native client application. 
 	  2) Deployable in Android,iOS and Web
 	  3) Demonstrate in Web in first place.
 	  4) Requirement: Run a Countdown timer with hard-coded value 100.
