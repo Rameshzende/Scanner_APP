@@ -2,6 +2,7 @@
 
 
 ### About the Project
+          
           1) Create a react-native client application. 
 	  2) Deployable in Android,iOS and Web
 	  3) Demonstrate in Web in first place.
