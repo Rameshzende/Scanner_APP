@@ -4,9 +4,8 @@
     1) Create a react-native client application. 
     2) Deployable in Android,iOS and Web.
     3) Demonstrate in Web in first place.
-    4) Requirement: Run a Countdown timer with hard-coded value 100.
-    5) Initially "Start" Circular Button should be enabled. On tapping StartButton, The button should be disabled and count-down timer          should run. 
-    6) Once the countdown timer reaches 0, Start Button should be enabled as in the first state.
+    4) Requirement: on Lunch the Application show the scan button. and when user click on scan buton scanner or camera view should be lunch and scan the barcodes. 
+    5) Scanned barcode should be disaplyed on App UI.
 	  
 
 ### Clonig the Project
@@ -70,7 +69,7 @@ You need to add the "missingDimensionStrategy" config for the 'react-native-came
 
 ### Importing React-native Camera , Scanner 
     
-Importing React-native camrea and scanner depedences to in the Project Enter the followinf command 
+Importing React-native camrea and scanner depedences to in the Project Enter the following command 
 
                                   npm install react-native-camera --save
                                   react-native link react-native-camera or 
@@ -83,4 +82,11 @@ Scanner import
                                    npx react-native link react-native-qrcode-scanner
 
 
-                  
+### Importing a Camera permission 
+
+To use Camera or scaner depedence in react you need to add the camera permission. TO handle the permission please neter the following commands 
+                                
+				npm install react-native-permissions --save
+                                react-native link react-native-permissions  
+				or npx  react-native link react-native-permissions  
+
