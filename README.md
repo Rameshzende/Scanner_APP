@@ -86,6 +86,6 @@ Scanner import
 To use Camera or scaner depedence in react you need to add the camera permission. TO handle the permission please neter the following commands 
                                 
 				     npm install react-native-permissions --save
-                                   react-native link react-native-permissions  
+                                     react-native link react-native-permissions  
 				     or npx  react-native link react-native-permissions  
 
