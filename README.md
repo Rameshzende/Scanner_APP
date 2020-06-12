@@ -1,12 +1,16 @@
-# Scanner_APP
-Simple React Scanner Ap
+# React Barcode Scanner App
+
+
+### About the Project
           
-	  1) Create a react-native client application. 
+
+
+          1) Create a react-native client application. 
 	  2) Deployable in Android,iOS and Web
 	  3) Demonstrate in Web in first place.
 	  4) Requirement: Run a Countdown timer with hard-coded value 100.
 	  5) Initially "Start" Circular Button should be enabled. On tapping StartButton, The button should be disabled and count-down timer should run. 
-      6) Once the countdown timer reaches 0, Start Button should be enabled as in the first state.
+          6) Once the countdown timer reaches 0, Start Button should be enabled as in the first state.
 	  
 
 ### Clonig the Project
@@ -25,14 +29,14 @@ Simple React Scanner Ap
            
            1) Open the cloned repository folder through the cmd 
                
-                 Enter into the Project folder by 
+              Enter into the Project folder by 
                       
-		                  cd /ProjectfolderName
+		      cd /ProjectfolderName
                
-                 the Start the application           
+               the Start the application           
                
-	              npx react-native run-android (To run on Android)
-                npx react-native run-ios (to run on iso Device)
+	       npx run-android (To run on Android)
+               npx run-ios (to run on iso Device)
 
 ### Creating a new application
 
@@ -44,3 +48,43 @@ Enter the following commndas
         cd /AwesomeProject 
         npx run-android or npx react-native run-android (to run the android app)
         npx run-ios or npx react-native run-ios (to run the ios app)
+
+### Android permission Access and Camera Depedence Importing 
+
+In you Project you should add these two  "VIBRATION , CAMERA"  permission to your AndroidManifest.xml. Its found in you Project path 
+         
+	                           PATH : android/app/src/main/AndroidManifest.xml 
+                                   
+                                  <uses-permission android:name="android.permission.CAMERA"/>
+                                  <uses-permission android:name="android.permission.VIBRATE"/>
+
+
+
+You need to add the "missingDimensionStrategy" config for the 'react-native-camera' setting to 'general', this should be found in your android/app/build.gradle add the following:
+
+
+                                    android {
+                                         ...
+                                     defaultConfig {
+                                                ...
+                                           missingDimensionStrategy 'react-native-camera', 'general'
+                                            }
+                                      }
+            
+
+### Importing React-native Camera , Scanner 
+    
+Importing React-native camrea and scanner depedences to in the Project Enter the followinf command 
+
+                                  npm install react-native-camera --save
+                                  react-native link react-native-camera or 
+                                  npx react-native link react-native-camera
+
+Scanner import
+                                  
+                                   npm install react-native-qrcode-scanner --save
+                                   react-native link react-native-qrcode-scanner or 
+                                   npx react-native link react-native-qrcode-scanner
+
+
+                  
